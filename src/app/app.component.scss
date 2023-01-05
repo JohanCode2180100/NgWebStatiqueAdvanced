@@ -1,0 +1,26 @@
+#container {
+  height: 100vh - (80 - 60); //header et footer
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100px 1fr 200px;
+}
+.header {
+  grid-area: 1/1/2/-1;
+  background-color: blue;
+}
+.nav {
+  grid-area: 2/1/6/2;
+  background-color: brown;
+}
+.footer {
+  grid-area: 5/1/6/-1;
+  background-color: red;
+}
+.article {
+  grid-area: 2/2/6/3;
+  background-color: lightblue;
+}
+.aside {
+  grid-area: 2/3/6/-1;
+  background-color: violet;
+}
